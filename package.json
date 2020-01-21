@@ -4,19 +4,20 @@
   "description": "MCQ Player for Assessments",
   "main": "build/libs-mcsr-radio-item-player",
   "scripts": {
-    "start": "webpack-dev-server --config webpack.dev.babel.js",
-    "build": "webpack --config webpack.prod.babel.js",
-    "postinstall": "npm run build",
+    "start": "",
+    "build": "",
     "config-generator": "create-config",
-    "post:build": "config-generator http://localhost:3000", 	
+    "postbuild": "config-generator http://localhost:3000"
   },
   "author": "Compro",
   "license": "ISC",
   "devDependencies": {
     "libs-base-item-player": "git+https://bitbucket.org/comprodls/libs-base-item-player.git",
     "libs-interface-item-player": "git+https://bitbucket.org/comprodls/libs-interface-item-player.git",
-    "module-config-generator": "^2.1.1"
+    "module-config-generator": "^2.1.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "path": "^0.12.7"
   },
   "dependencies": {}
 }
-
