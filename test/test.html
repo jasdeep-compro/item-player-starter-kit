@@ -1,21 +1,8 @@
 <html>
 <script>
-    var packageJson;
-    fetch('./package.json')
-        .then(response => {
-            return response.json()
-        })
-        .then(data => {
-            // Work with JSON data here
-            packageJson = data;
-        })
-        .catch(err => {
-            console.log("Error occured");
-            // Do something for an error here
-    })
 
     window.onload = function(){
-        window.location.replace(`http://leonardo-item-player-test.herokuapp.com/testbench?packageBasePath=http://localhost:3000/&playerName=${packageJson.name}&playerVersion=${packageJson.version}&itemJson=http://localhost:3000/test/item.json`);
+        window.location.replace(`http://leonardo-item-player-test.herokuapp.com/testbench?basePath=http://localhost:3000`);
     }
 </script>
 </html>
