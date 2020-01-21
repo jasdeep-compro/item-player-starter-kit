@@ -1,6 +1,6 @@
 {
     "type": "item",
-    "subType": "mscr-radio",
+    "subType": "mcsr-radio",
     "css": [],
     "resources": [],
     "dependencies": [
