@@ -1,34 +1,22 @@
 {
-  "name": "item-player-development-starter-kit",
+  "name": "libs-mcsr-radio-item-player",
   "version": "0.0.1",
-  "description": "",
-  "main": "dist/libs-item-player-name.js",
+  "description": "MCQ Player for Assessments",
+  "main": "build/libs-mcsr-radio-item-player",
   "scripts": {
-    "demo": "node publish",
-    "start": "node server",
-    "sdk:publish": "sdk-publish",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack-dev-server --config webpack.dev.babel.js",
+    "build": "webpack --config webpack.prod.babel.js",
+    "postinstall": "npm run build",
+    "config-generator": "create-config",
+    "post:build": "config-generator http://localhost:3000", 	
   },
-  "files": [
-    "dist/*"
-  ],
-  "sdkConfig": {
-    "self": {
-	  "type": "item",
-      "subType": "mscr-radio",
-      "cs": [],
-      "resources": []
-    },
-    "react": "16.12.0",
-    "react-dom": "16.12.0",
-    "libs-player-ui-components": "0.0.1"
-  },
-  "author": "",
+  "author": "Compro",
   "license": "ISC",
   "devDependencies": {
-    "express": "^4.17.1",
-    "path": "^0.12.7",
-    "libs-interface-item-player": "0.0.1",
-    "sdk-publisher": "0.0.1"
-  }
+    "libs-base-item-player": "git+https://bitbucket.org/comprodls/libs-base-item-player.git",
+    "libs-interface-item-player": "git+https://bitbucket.org/comprodls/libs-interface-item-player.git",
+    "module-config-generator": "^2.1.1"
+  },
+  "dependencies": {}
 }
+
