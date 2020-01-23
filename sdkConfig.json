@@ -5,7 +5,7 @@
     "resources": [],
     "dependencies": [
         "react",
-        "react-dom",
+        "react-dom"
     ],
     "localDependencies": {
         "libs-player-ui-components": "http://localhost:4500/libs-player-ui-componets.js"
