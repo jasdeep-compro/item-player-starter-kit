@@ -11,11 +11,10 @@
   "author": "Compro",
   "license": "ISC",
   "devDependencies": {
+    "@leosdk/interface-item-player" : "0.0.1",
+    "@leosdk/module-config-generator" : "0.0.1",
     "cors": "^2.8.5",
     "express": "^4.17.1",
-    "libs-base-item-player": "git+https://bitbucket.org/comprodls/libs-base-item-player.git",
-    "libs-interface-item-player": "git+https://bitbucket.org/comprodls/libs-interface-item-player.git",
-    "module-config-generator": "^2.1.7",
     "path": "^0.12.7"
   },
   "dependencies": {}
