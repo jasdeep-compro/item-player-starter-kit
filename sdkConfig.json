@@ -7,7 +7,7 @@
         "react",
         "react-dom"
     ],
-    "internalDependencies: [
+    "internalDependencies": [
       "libs-player-ui-components"
     ],
     "localDependencies": {
