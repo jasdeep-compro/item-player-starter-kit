@@ -3,13 +3,12 @@
     "subType": "mcsr-radio",
     "css": [],
     "resources": [],
-    "externalDependencies": [
+    "dependencies": [
         "react",
-        "react-dom"
+        "react-dom",
+        "libs-player-ui-components"
     ],
-    "internalDependencies": [
-      "libs-player-ui-components"
-    ],
-    "localDependencies": {
+    "path": {
+         "libs-player-ui-components": "http://localhost:4500/index.js"
     }
 }
