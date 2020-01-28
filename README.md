@@ -4,17 +4,18 @@ To start the development of a new Item Player, the developer needs to do followi
 * Download the starter kit and update the following files:
   * package.json
   * sdkConfig.json file, defining the dependencies.
-  * “test” folder which will have a “test.html” file and “item.json”.
-  * “server.js” file to serve the test.html file.
-* Run “npm install” command.
-* Run “node server” command to setup the the local server.
-* Run “npm run build” to build the Item Player code.
+  * _“test”_ folder which will have a _“test.html”_ file and _“item.json”_.
+  * _“server.js”_ file to serve the test.html file.
+* Run _“npm install”_ command.
+* Run _“node server”_ command to setup the the local server.
+* Develop your item player implementing the IItem Interface and configure the _"npm run build"_ command.
+* Run _“npm run build”_ to build the Item Player code.
 * Open the url [http://localhost:3000/](http://localhost:3000/) in the browser, which will redirect to the Item Player Test Bench.
 
 ## Guidelines:
 
-* The “server.js” file provided in the starter kit creates a local server at port number 3000. The developer should make sure that the port 3000 is available. If the port is not available, please refer to Appendix A.
-* The package.json provided in the starter kit contains a “postbuild” script which invokes an npm module named “module-config-generator”. The developer should not remove this script. For more details please refer to Appendix B.
+* The _“server.js”_ file provided in the starter kit creates a local server at port number 3000. The developer should make sure that the port 3000 is available. If the port is not available, please refer to Appendix A.
+* The package.json provided in the starter kit contains a “postbuild” script which invokes an npm module named _“module-config-generator”_. The developer should not remove this script. For more details please refer to Appendix B.
 * The developer needs to provide at least one Item json (in the specified format) to launch the Item Player.
 
 ## Appendix A
