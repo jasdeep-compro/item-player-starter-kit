@@ -1,6 +1,6 @@
-# Testing of an Item Player
+# How to start development of an Item Player
 
-To start testing the Item Player, the developer needs to do following things:
+To start the development of a new Item Player, the developer needs to do following things:
 * Download the starter kit and update the following files:
   * package.json
   * sdkConfig.json file, defining the dependencies.
@@ -8,7 +8,7 @@ To start testing the Item Player, the developer needs to do following things:
   * “server.js” file to serve the test.html file.
 * Run “npm install” command.
 * Run “node server” command to setup the the local server.
- *Run “npm run build” to build the Item Player code.
+* Run “npm run build” to build the Item Player code.
 * Open the url [http://localhost:3000/](http://localhost:3000/) in the browser, which will redirect to the Item Player Test Bench.
 
 ## Guidelines:
