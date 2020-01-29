@@ -1,18 +1,20 @@
 {
-  "name": "libs-mcsr-radio-item-player",
+  "name": "libs-item-player-1",
   "version": "0.0.1",
-  "description": "MCQ Player for Assessments",
-  "main": "build/libs-mcsr-radio-item-player",
+  "description": "Item Player for x-type Assessments",
+  "main": "dist/item-player.min",
   "scripts": {
     "start": "node server",
     "build": "",
-    "postbuild": "generate-config http://localhost:3000"
+    "postbuild": "generate-config http://localhost:3000",
+    "sdk-publish": "publish-module"
   },
   "author": "Compro",
   "license": "ISC",
   "devDependencies": {
     "@leosdk/interface-item-player" : "0.0.1",
-    "@leosdk/module-config-generator" : "0.0.1",
+    "@leosdk/module-config-generator" : "^0.0.1",
+    "@leosdk/module-publisher": "^0.0.1",
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "path": "^0.12.7"
