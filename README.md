@@ -1,11 +1,11 @@
-# How to start development of an Item Player
+# Setting-up Item Player code base
 
 To start the development of a new Item Player, the developer needs to do following things:
 * Download the starter kit and update the following files:
   * package.json
   * sdkConfig.json file, defining the dependencies.
   * _“test”_ folder which will have a _“test.html”_ file and _“item.json”_.
-  * _“server.js”_ file to serve the test.html file.
+  * _“server.js”_ file to serve cross-origin resource sharing (cors) of test.html, package.json & sdk.config.json 
 * Run _“npm install”_ command.
 * Run _“node server”_ command to setup the the local server.
 * Develop your item player implementing the IItem Interface and configure the _"npm run build"_ command.
@@ -20,18 +20,16 @@ To start the development of a new Item Player, the developer needs to do followi
 
 ## Appendix A
 
-If the port 3000 is not available, following files would need to be updated:
-* The _“postbuild”_ script mentioned in package.json file
-* test.html needs to be updated to pass the updated local url
+If the port 3000 is not available, new port needs to be updated at following places:
+* _“postbuild”_ script mentioned in package.json file
+* queryParam mentioned in _"test.html"_ file
 
 ## Appendix B
 
 [Module-config-generator](https://github.com/jasdeep-compro/module-config-generator/blob/master/README.md) is a npm CLI package which perform the following things:
-* It reads the package.json and sdkConfig.json files from the root directory and generates a new json file [config.json](https://jsoneditoronline.org/?id=b56049512d9b4c96af9f233a703f5efc) in the test folder of the root directory. [sdkConfig.json](https://jsoneditoronline.org/?id=64f849dd0add417494ce1eea29f68e2a) is an optional file it may or may not exist in root directory.
+* It reads the package.json and sdk.config.json files from the root directory and generates a new json file [config.json](https://jsoneditoronline.org/?id=b56049512d9b4c96af9f233a703f5efc) in the test folder of the root directory. [sdk.config.json](https://jsoneditoronline.org/?id=64f849dd0add417494ce1eea29f68e2a) is an optional file it may or may not exist in root directory.
 * Name, main and  version are the required fields of package.json. Module-config-generator only deal with these fields.
-* type and subType are required field in sdkConfig.json
-* Css and resources are the additional css and js file required to render the item player.
-* Dependencies is an array of dependencies which is required to render the item player eg: react, react-dom etc.
-* localDependencies is an object that contains all local dependencies as a key and file location as value.
-
- **Note:** Allow cross-origin resource sharing (cors) on server to access package.json and sdkConfig.json.
+* type and subType are required field in sdk.config.json
+* css and resources are the additional css and js files required to render the item player.
+* dependencies is an array of dependencies which is required to render the item player eg: react, react-dom etc.
+* path contains the path mapping for the local modules which are not published yet. Note: these modules need to be published before publishing the Item Player module.
