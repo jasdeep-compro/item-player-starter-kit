@@ -17,6 +17,9 @@ To start the development of a new Item Player, the developer needs to do followi
 * The _“server.js”_ file provided in the starter kit creates a local server at port number 3000. The developer should make sure that the port 3000 is available. If the port is not available, please refer to Appendix A.
 * The package.json provided in the starter kit contains a “postbuild” script which invokes an npm module named _“module-config-generator”_. The developer should not remove this script. For more details please refer to Appendix B.
 * The developer needs to provide at least one Item json (in the specified format) to launch the Item Player.
+* Leonardo libraries are available in the Leonardo private npm repository. To access this repository, user need to execute following commands
+> 1. npm config set registry http://npm.leonardodls.com
+> 2. npm set //npm.leonardodls.com/:_authToken=< token >
 
 ## Appendix A
 
